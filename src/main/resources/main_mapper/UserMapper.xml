@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ayoteralab.main.mapper.UserMapper">
+
+<select id="selectUser" resultType="com.example.ayoteralab.main.dto.UserDTO">
+<![CDATA[
+	SELECT 
+		*
+	FROM USER
+]]>
+</select>
+
+<select id="selectStationMise" resultType="com.example.ayoteralab.main.dto.StationMiseDTO">
+<![CDATA[
+	SELECT 
+		STATION_NAME,
+  		NO2_VALUE,
+  		O3_VALUE,
+  		PM10_VALUE,
+  		PM25_VALUE,
+  		DATE_TIME
+	FROM STATION_MISE
+]]>
+</select>
+
+<select id="selectStationMiseById" resultType="com.example.ayoteralab.main.dto.StationMiseDTO">
+<![CDATA[
+	SELECT 
+		STATION_NAME,
+  		NO2_VALUE,
+  		O3_VALUE,
+  		PM10_VALUE,
+  		PM25_VALUE,
+  		DATE_TIME
+	FROM STATION_MISE
+	WHERE STATION_NAME = #{stationName}
+]]>
+</select>
+
+<insert id="insertStationMise" parameterType="com.example.ayoteralab.main.dto.StationMiseDTO">
+<![CDATA[
+	INSERT INTO STATION_MISE
+		(STATION_NAME, NO2_VALUE, O3_VALUE, PM10_VALUE, PM25_VALUE, DATE_TIME)
+	VALUES
+		(#{mydto.stationName}, #{mydto.no2Value}, #{mydto.o3Value}, #{mydto.pm10Value}, #{mydto.pm25Value}, #{mydto.dateTime})		
+]]>
+</insert>
+
+<update id="updateStationMise" parameterType="java.lang.String">
+<![CDATA[
+	UPDATE STATION_MISE
+	SET PM10_VALUE = #{mydto.pm10Value}, PM25_VALUE = #{mydto.pm25Value}
+	WHERE STATION_NAME = #{stationName}
+]]>
+</update>
+
+<delete id="deleteStationMise" parameterType="java.lang.String">
+<![CDATA[
+	DELETE FROM STATION_MISE
+	WHERE STATION_NAME = #{stationName}
+]]>
+</delete>
+
+</mapper>
