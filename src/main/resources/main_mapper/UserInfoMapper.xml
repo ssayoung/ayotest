@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ayoteralab.main.mapper.UserInfoMapper">
+
+<select id="getUserInfoById" resultType="com.example.ayoteralab.main.dto.MyUserDetails">
+<![CDATA[
+	SELECT
+		*
+	FROM user_info
+	WHERE LOGIN_ID = #{username}
+]]>
+</select>
+
+<insert id="signupUser" parameterType="com.example.ayoteralab.main.dto.UserDTO">
+<![CDATA[
+	INSERT INTO user_info
+    	(LOGIN_ID, LOGIN_PASS, FULL_NAME, EMAIL, CREATE_DATE, LAST_LOGIN_PASS_UPDATE_DATE, DELETE_YN, LOGIN_FAIL_COUNT)
+	VALUES
+	    (#{user.loginId}, #{user.loginPass}, #{user.fullName}, #{user.email}, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'N', 0); 
+]]>
+</insert>
+
+</mapper>

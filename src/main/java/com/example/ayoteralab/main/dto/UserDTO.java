@@ -2,34 +2,34 @@ package com.example.ayoteralab.main.dto;
 
 public class UserDTO {
 	
-	private String seq;
-	private String name;
-	private String location;
-	private String phone;
+	private String loginId;
+	private String loginPass;
+	private String fullName;
+	private String email;
 	
-	public String getSeq() {
-		return seq;
+	public String getLoginId() {
+		return loginId;
 	}
-	public void setSeq(String seq) {
-		this.seq = seq;
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
 	}
-	public String getName() {
-		return name;
+	public String getLoginPass() {
+		return loginPass;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setLoginPass(String loginPass) {
+		this.loginPass = loginPass;
 	}
-	public String getLocation() {
-		return location;
+	public String getEmail() {
+		return email;
 	}
-	public void setLocation(String location) {
-		this.location = location;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	public String getPhone() {
-		return phone;
+	public String getFullName() {
+		return fullName;
 	}
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 
 }
