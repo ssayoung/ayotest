@@ -16,8 +16,19 @@
 	INSERT INTO user_info
     	(LOGIN_ID, LOGIN_PASS, FULL_NAME, EMAIL, CREATE_DATE, LAST_LOGIN_PASS_UPDATE_DATE, DELETE_YN, LOGIN_FAIL_COUNT)
 	VALUES
-	    (#{user.loginId}, #{user.loginPass}, #{user.fullName}, #{user.email}, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'N', 0); 
+	    (#{user.loginId}, #{user.loginPassEncrypt}, #{user.fullName}, #{user.email}, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'N', 0); 
 ]]>
 </insert>
+
+<select id="getUserRoleByUserId" resultType="java.lang.String">
+<![CDATA[
+	SELECT
+		B.ROLE_NAME
+	FROM user_role A
+	LEFT JOIN role_info B
+	ON A.ROLE_ID = B.ROLE_ID
+	where A.USER_ID = #{userId}
+]]>
+</select>
 
 </mapper>

@@ -6,7 +6,8 @@ public class UserDTO {
 	private String loginPass;
 	private String fullName;
 	private String email;
-	
+	private String loginPassEncrypt;
+
 	public String getLoginId() {
 		return loginId;
 	}
@@ -30,6 +31,12 @@ public class UserDTO {
 	}
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
+	}
+	public String getLoginPassEncrypt() {
+		return loginPassEncrypt;
+	}
+	public void setLoginPassEncrypt(String loginPassEncrypt) {
+		this.loginPassEncrypt = loginPassEncrypt;
 	}
 
 }

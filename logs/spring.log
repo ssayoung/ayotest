@@ -1,178 +1,391 @@
-2019-12-10 22:13:49.695  INFO 80524 --- [main] c.e.ayoteralab.AyoteralabApplication     : Starting AyoteralabApplication on cysh-PC with PID 80524 (C:\testworkspace\ayoteralab\target\classes started by cysh in C:\testworkspace\ayoteralab)
-2019-12-10 22:13:49.712  INFO 80524 --- [main] c.e.ayoteralab.AyoteralabApplication     : No active profile set, falling back to default profiles: default
-2019-12-10 22:13:51.518  WARN 80524 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
-2019-12-10 22:13:51.921  INFO 80524 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-10 22:13:52.415  INFO 80524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-12-10 22:13:52.434  INFO 80524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-10 22:13:52.435  INFO 80524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-10 22:13:52.984  INFO 80524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-10 22:13:52.984  INFO 80524 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3094 ms
-2019-12-10 22:13:54.450  INFO 80524 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-10 22:13:54.686  INFO 80524 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-10 22:13:55.080  INFO 80524 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-12-10 22:13:55.117  INFO 80524 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-12-10 22:13:55.202  INFO 80524 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-12-10 22:13:55.560  INFO 80524 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
-2019-12-10 22:13:55.635  INFO 80524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-10 22:13:55.641  INFO 80524 --- [main] c.e.ayoteralab.AyoteralabApplication     : Started AyoteralabApplication in 7.008 seconds (JVM running for 13.81)
-2019-12-10 22:14:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:14:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:14:14.276  INFO 80524 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:14:14.285  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:14:47.655  INFO 80524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-10 22:14:47.657  INFO 80524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-10 22:14:47.672  INFO 80524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
-2019-12-10 22:14:47.724  INFO 80524 --- [http-nio-8080-exec-1] c.e.a.main.controller.UserController     : REST call Station Mise
-2019-12-10 22:14:47.739  INFO 80524 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-10 22:14:48.042  INFO 80524 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-10 22:15:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:15:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:15:13.143  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:15:13.167  INFO 80524 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:16:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:16:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:16:13.879  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:16:13.890  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:17:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:17:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:17:13.402  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:17:13.424  INFO 80524 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:18:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:18:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:18:13.619  INFO 80524 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:18:13.700  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:19:01.000  INFO 80524 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:19:01.000  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:19:14.506  INFO 80524 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:19:14.637  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:20:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:20:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:20:13.881  INFO 80524 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:20:13.969  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:21:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:21:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:21:13.359  INFO 80524 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:21:13.430  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:22:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:22:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:22:13.643  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:22:13.765  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:23:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:23:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:23:13.812  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:23:13.831  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:24:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:24:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:24:14.296  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:24:14.337  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:25:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:25:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:25:14.007  INFO 80524 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:25:14.134  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:26:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:26:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:26:14.154  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:26:14.162  INFO 80524 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:27:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:27:01.001  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:27:15.529  INFO 80524 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:27:15.667  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:28:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:28:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:28:13.670  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:28:13.763  INFO 80524 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:29:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:29:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:29:13.544  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:29:13.565  INFO 80524 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:30:01.247  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:30:01.247  INFO 80524 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:30:20.114  INFO 80524 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:30:20.157  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:31:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:31:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:31:14.455  INFO 80524 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:31:14.488  INFO 80524 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:32:01.000  INFO 80524 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:32:01.002  INFO 80524 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:32:03.532  INFO 80524 --- [RMI TCP Connection(31)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-12-10 22:32:03.543  INFO 80524 --- [RMI TCP Connection(31)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-10 22:32:03.582  INFO 80524 --- [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-12-10 22:32:03.642  INFO 80524 --- [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-12-10 22:32:15.120  INFO 80524 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:32:15.238  INFO 80524 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:32:52.572  INFO 81044 --- [main] c.e.ayoteralab.AyoteralabApplication     : Starting AyoteralabApplication on cysh-PC with PID 81044 (C:\testworkspace\ayoteralab\target\classes started by cysh in C:\testworkspace\ayoteralab)
-2019-12-10 22:32:52.579  INFO 81044 --- [main] c.e.ayoteralab.AyoteralabApplication     : No active profile set, falling back to default profiles: default
-2019-12-10 22:32:55.214  WARN 81044 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
-2019-12-10 22:32:55.770  INFO 81044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-10 22:32:56.410  INFO 81044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-12-10 22:32:56.436  INFO 81044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-10 22:32:56.437  INFO 81044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-10 22:32:56.753  INFO 81044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-10 22:32:56.756  INFO 81044 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3995 ms
-2019-12-10 22:32:58.127  INFO 81044 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-10 22:32:58.335  INFO 81044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-10 22:32:58.770  INFO 81044 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-12-10 22:32:58.800  INFO 81044 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-12-10 22:32:58.892  INFO 81044 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-12-10 22:32:59.253  INFO 81044 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
-2019-12-10 22:32:59.307  INFO 81044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-10 22:32:59.314  INFO 81044 --- [main] c.e.ayoteralab.AyoteralabApplication     : Started AyoteralabApplication in 7.781 seconds (JVM running for 12.39)
-2019-12-10 22:33:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:33:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:33:12.578  INFO 81044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-10 22:33:12.581  INFO 81044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-10 22:33:12.603  INFO 81044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
-2019-12-10 22:33:12.667  INFO 81044 --- [http-nio-8080-exec-1] c.e.a.main.controller.UserController     : REST call Station Mise
-2019-12-10 22:33:12.687  INFO 81044 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-10 22:33:13.019  INFO 81044 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-10 22:33:15.569  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:33:15.584  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:34:01.001  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:34:01.001  INFO 81044 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:34:13.585  INFO 81044 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:34:13.612  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:35:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:35:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:35:13.697  INFO 81044 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:35:13.759  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:36:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:36:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:36:13.963  INFO 81044 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:36:13.970  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:37:01.001  INFO 81044 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:37:01.001  INFO 81044 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:37:14.106  INFO 81044 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:37:14.121  INFO 81044 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:38:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:38:01.003  INFO 81044 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:38:13.816  INFO 81044 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:38:13.904  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:39:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:39:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:39:14.438  INFO 81044 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:39:14.443  INFO 81044 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:40:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:40:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:40:15.278  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:40:15.420  INFO 81044 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:41:01.001  INFO 81044 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:41:01.001  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:41:13.430  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:41:13.530  INFO 81044 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:42:01.001  INFO 81044 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:42:01.001  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:42:13.723  INFO 81044 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:42:13.757  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:43:01.001  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:43:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:43:13.478  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:43:13.529  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:44:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
-2019-12-10 22:44:01.002  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
-2019-12-10 22:44:13.338  INFO 81044 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
-2019-12-10 22:44:13.362  INFO 81044 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
-2019-12-10 22:44:44.433  INFO 81044 --- [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-12-10 22:44:44.438  INFO 81044 --- [RMI TCP Connection(21)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-12-10 22:44:44.444  INFO 81044 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-12-10 22:44:44.460  INFO 81044 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-26 22:07:38.358  INFO 13472 --- [main] c.e.ayoteralab.AyoteralabApplication     : Starting AyoteralabApplication on cysh-PC with PID 13472 (C:\git\ayotest\target\classes started by cysh in C:\git\ayotest)
+2019-12-26 22:07:38.388  INFO 13472 --- [main] c.e.ayoteralab.AyoteralabApplication     : No active profile set, falling back to default profiles: default
+2019-12-26 22:07:42.706  WARN 13472 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 22:07:42.708  WARN 13472 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 22:07:43.854  INFO 13472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 22:07:48.063  INFO 13472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 22:07:48.098  INFO 13472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 22:07:48.101  INFO 13472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-26 22:07:48.601  INFO 13472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 22:07:48.602  INFO 13472 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9866 ms
+2019-12-26 22:07:51.550  INFO 13472 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/css/**, /static/js/**, *.ico'], []
+2019-12-26 22:07:51.741  INFO 13472 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1943c1f2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6690b9fa, org.springframework.security.web.header.HeaderWriterFilter@708eb310, org.springframework.security.web.csrf.CsrfFilter@2e32fc22, org.springframework.security.web.authentication.logout.LogoutFilter@753fd7a1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2954f6ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@493b01ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68699afc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d70f722, org.springframework.security.web.session.SessionManagementFilter@1e977098, org.springframework.security.web.access.ExceptionTranslationFilter@6e03db1f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49469ffa]
+2019-12-26 22:07:51.852  INFO 13472 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 22:07:52.259  INFO 13472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 22:07:53.238  INFO 13472 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-26 22:07:53.354  INFO 13472 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-26 22:07:53.570  INFO 13472 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-26 22:07:54.630  INFO 13472 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2019-12-26 22:07:54.881  INFO 13472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 22:07:54.898  INFO 13472 --- [main] c.e.ayoteralab.AyoteralabApplication     : Started AyoteralabApplication in 18.466 seconds (JVM running for 20.34)
+2019-12-26 22:08:01.001  INFO 13472 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:08:01.001  INFO 13472 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:08:10.489  INFO 13472 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 22:08:10.491  INFO 13472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 22:08:10.658  INFO 13472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 166 ms
+2019-12-26 22:08:17.308  INFO 13472 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:08:17.372  INFO 13472 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:08:20.308  INFO 13472 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-26 22:08:21.050  INFO 13472 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-26 22:08:21.081 DEBUG 13472 --- [http-nio-8080-exec-9] c.e.a.m.m.U.getUserInfoById              : ==>  Preparing: SELECT * FROM user_info WHERE LOGIN_ID = ? 
+2019-12-26 22:08:21.295 DEBUG 13472 --- [http-nio-8080-exec-9] c.e.a.m.m.U.getUserInfoById              : ==> Parameters: test1(String)
+2019-12-26 22:08:21.485 DEBUG 13472 --- [http-nio-8080-exec-9] c.e.a.m.m.U.getUserInfoById              : <==      Total: 1
+2019-12-26 22:09:01.000  INFO 13472 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:09:01.000  INFO 13472 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:09:14.978  INFO 13472 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:09:15.013  INFO 13472 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:10:01.005  INFO 13472 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:10:01.008  INFO 13472 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:10:21.257  INFO 13472 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:10:21.265  INFO 13472 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:11:01.368  INFO 18676 --- [main] c.e.ayoteralab.AyoteralabApplication     : Starting AyoteralabApplication on cysh-PC with PID 18676 (C:\git\ayotest\target\classes started by cysh in C:\git\ayotest)
+2019-12-26 22:11:01.382  INFO 18676 --- [main] c.e.ayoteralab.AyoteralabApplication     : No active profile set, falling back to default profiles: default
+2019-12-26 22:11:06.179  WARN 18676 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 22:11:06.181  WARN 18676 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 22:11:07.104  INFO 18676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 22:11:11.369  INFO 18676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 22:11:11.414  INFO 18676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 22:11:11.415  INFO 18676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-26 22:11:11.994  INFO 18676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 22:11:11.995  INFO 18676 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10334 ms
+2019-12-26 22:11:17.497  INFO 18676 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/css/**, /static/js/**, *.ico'], []
+2019-12-26 22:11:17.878  INFO 18676 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bf14704, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f36c8e3, org.springframework.security.web.header.HeaderWriterFilter@431e86b1, org.springframework.security.web.csrf.CsrfFilter@10c47c79, org.springframework.security.web.authentication.logout.LogoutFilter@3238e2aa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64c781a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a9344f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d20e575, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a545b0f, org.springframework.security.web.session.SessionManagementFilter@32a2a6be, org.springframework.security.web.access.ExceptionTranslationFilter@786ff1cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@642857e0]
+2019-12-26 22:11:18.225  INFO 18676 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 22:11:19.075  INFO 18676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 22:11:20.722  INFO 18676 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-26 22:11:20.860  INFO 18676 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-26 22:11:21.154  INFO 18676 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-26 22:11:22.104  INFO 18676 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2019-12-26 22:11:22.239  INFO 18676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 22:11:22.255  INFO 18676 --- [main] c.e.ayoteralab.AyoteralabApplication     : Started AyoteralabApplication in 23.226 seconds (JVM running for 25.786)
+2019-12-26 22:12:01.002  INFO 18676 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:12:01.002  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:12:15.363  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:12:15.394  INFO 18676 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:12:30.887  INFO 18676 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 22:12:30.889  INFO 18676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 22:12:30.915  INFO 18676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-12-26 22:12:43.545  INFO 18676 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-26 22:12:44.248  INFO 18676 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-26 22:12:44.274 DEBUG 18676 --- [http-nio-8080-exec-4] c.e.a.m.m.U.getUserInfoById              : ==>  Preparing: SELECT * FROM user_info WHERE LOGIN_ID = ? 
+2019-12-26 22:12:44.348 DEBUG 18676 --- [http-nio-8080-exec-4] c.e.a.m.m.U.getUserInfoById              : ==> Parameters: test1(String)
+2019-12-26 22:12:44.457 DEBUG 18676 --- [http-nio-8080-exec-4] c.e.a.m.m.U.getUserInfoById              : <==      Total: 1
+2019-12-26 22:13:01.001  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:13:01.001  INFO 18676 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:13:16.040  INFO 18676 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:13:16.138  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:14:01.001  INFO 18676 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:14:01.003  INFO 18676 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:14:18.759  INFO 18676 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:14:18.772  INFO 18676 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:15:01.001  INFO 18676 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:15:01.001  INFO 18676 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:15:18.708  INFO 18676 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:15:18.716  INFO 18676 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:16:01.001  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:16:01.001  INFO 18676 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:16:18.984  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:16:19.009  INFO 18676 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:17:01.002  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:17:01.002  INFO 18676 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:17:19.079  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:17:19.101  INFO 18676 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:18:01.000  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:18:01.002  INFO 18676 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:18:21.906  INFO 18676 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:18:21.966  INFO 18676 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:19:01.002  INFO 18676 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:19:01.002  INFO 18676 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:26:29.075  INFO 6520 --- [main] c.e.ayoteralab.AyoteralabApplication     : Starting AyoteralabApplication on cysh-PC with PID 6520 (C:\git\ayotest\target\classes started by cysh in C:\git\ayotest)
+2019-12-26 22:26:29.089  INFO 6520 --- [main] c.e.ayoteralab.AyoteralabApplication     : No active profile set, falling back to default profiles: default
+2019-12-26 22:26:35.354  WARN 6520 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 22:26:35.356  WARN 6520 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 22:26:36.803  INFO 6520 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 22:26:41.868  INFO 6520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 22:26:41.940  INFO 6520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 22:26:41.943  INFO 6520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-26 22:26:42.602  INFO 6520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 22:26:42.603  INFO 6520 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 13187 ms
+2019-12-26 22:26:46.406  INFO 6520 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/css/**, /static/js/**, *.ico'], []
+2019-12-26 22:26:46.619  INFO 6520 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2db33feb, org.springframework.security.web.context.SecurityContextPersistenceFilter@12a2585b, org.springframework.security.web.header.HeaderWriterFilter@7da34b26, org.springframework.security.web.csrf.CsrfFilter@6690b9fa, org.springframework.security.web.authentication.logout.LogoutFilter@6a9344f5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46911148, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@309cedb6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ba0ae41, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30c3ae63, org.springframework.security.web.session.SessionManagementFilter@3b2553d9, org.springframework.security.web.access.ExceptionTranslationFilter@fb49fdf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20eaeaf8]
+2019-12-26 22:26:46.748  INFO 6520 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 22:26:47.236  INFO 6520 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 22:26:48.616  INFO 6520 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-26 22:26:48.824  INFO 6520 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-26 22:26:49.076  INFO 6520 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-26 22:26:50.151  INFO 6520 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2019-12-26 22:26:50.295  INFO 6520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 22:26:50.311  INFO 6520 --- [main] c.e.ayoteralab.AyoteralabApplication     : Started AyoteralabApplication in 25.593 seconds (JVM running for 29.506)
+2019-12-26 22:27:01.001  INFO 6520 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:27:01.003  INFO 6520 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:27:14.701  INFO 6520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 22:27:14.702  INFO 6520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 22:27:14.745  INFO 6520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2019-12-26 22:27:20.501  INFO 6520 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:27:21.163  INFO 6520 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:27:35.864  INFO 6520 --- [http-nio-8080-exec-7] c.e.a.main.controller.ViewController     : [POST] /usersignup :: Insert User in user_info table - com.example.ayoteralab.main.dto.UserDTO@1f8dd4ac
+2019-12-26 22:27:36.298  INFO 6520 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-26 22:27:37.222  INFO 6520 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-26 22:27:37.252 DEBUG 6520 --- [http-nio-8080-exec-7] c.e.a.m.m.UserInfoMapper.signupUser      : ==>  Preparing: INSERT INTO user_info (LOGIN_ID, LOGIN_PASS, FULL_NAME, EMAIL, CREATE_DATE, LAST_LOGIN_PASS_UPDATE_DATE, DELETE_YN, LOGIN_FAIL_COUNT) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'N', 0); 
+2019-12-26 22:27:37.427 DEBUG 6520 --- [http-nio-8080-exec-7] c.e.a.m.m.UserInfoMapper.signupUser      : ==> Parameters: test2(String), $2a$10$e7jZEhvuKiv3ZnyW/3tMaOmfSoUDUE5aHVJbdtGR5usjYV5VWeom6(String), test2(String), test2@go.go(String)
+2019-12-26 22:27:37.527 DEBUG 6520 --- [http-nio-8080-exec-7] c.e.a.m.m.UserInfoMapper.signupUser      : <==    Updates: 1
+2019-12-26 22:28:01.002  INFO 6520 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:28:01.002  INFO 6520 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:28:19.913  INFO 6520 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:28:20.043  INFO 6520 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:29:01.002  INFO 6520 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:29:01.002  INFO 6520 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:29:23.722  INFO 6520 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:29:24.160  INFO 6520 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:30:01.001  INFO 6520 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:30:01.003  INFO 6520 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:30:19.919  INFO 6520 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:30:19.969  INFO 6520 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:30:28.590 DEBUG 6520 --- [http-nio-8080-exec-3] c.e.a.m.m.U.getUserInfoById              : ==>  Preparing: SELECT * FROM user_info WHERE LOGIN_ID = ? 
+2019-12-26 22:30:28.592 DEBUG 6520 --- [http-nio-8080-exec-3] c.e.a.m.m.U.getUserInfoById              : ==> Parameters: test2(String)
+2019-12-26 22:30:28.695 DEBUG 6520 --- [http-nio-8080-exec-3] c.e.a.m.m.U.getUserInfoById              : <==      Total: 1
+2019-12-26 22:31:01.001  INFO 6520 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:31:01.003  INFO 6520 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:31:20.549  INFO 6520 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:31:20.611  INFO 6520 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:32:01.002  INFO 6520 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:32:01.011  INFO 6520 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:32:19.663  INFO 6520 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:32:19.679  INFO 6520 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:33:01.001  INFO 6520 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:33:01.001  INFO 6520 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:33:19.660  INFO 6520 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:33:19.725  INFO 6520 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:34:01.001  INFO 6520 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:34:01.001  INFO 6520 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:34:20.416  INFO 6520 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:34:20.499  INFO 6520 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:35:01.001  INFO 6520 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:35:01.001  INFO 6520 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:35:32.441  INFO 15192 --- [main] c.e.ayoteralab.AyoteralabApplication     : Starting AyoteralabApplication on cysh-PC with PID 15192 (C:\git\ayotest\target\classes started by cysh in C:\git\ayotest)
+2019-12-26 22:35:32.465  INFO 15192 --- [main] c.e.ayoteralab.AyoteralabApplication     : No active profile set, falling back to default profiles: default
+2019-12-26 22:35:37.943  WARN 15192 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 22:35:37.947  WARN 15192 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 22:35:39.146  INFO 15192 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 22:35:43.557  INFO 15192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 22:35:43.599  INFO 15192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 22:35:43.600  INFO 15192 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-26 22:35:44.183  INFO 15192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 22:35:44.183  INFO 15192 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11458 ms
+2019-12-26 22:35:47.202  INFO 15192 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/css/**, /static/js/**, *.ico'], []
+2019-12-26 22:35:47.363  INFO 15192 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2954f6ab, org.springframework.security.web.context.SecurityContextPersistenceFilter@bfec2f9, org.springframework.security.web.header.HeaderWriterFilter@ffd4cba, org.springframework.security.web.csrf.CsrfFilter@7cac93fe, org.springframework.security.web.authentication.logout.LogoutFilter@fb49fdf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@58b5a2f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ebc9573, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45adc393, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58fbd02e, org.springframework.security.web.session.SessionManagementFilter@670f2466, org.springframework.security.web.access.ExceptionTranslationFilter@79d82f66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6807a356]
+2019-12-26 22:35:47.507  INFO 15192 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 22:35:47.968  INFO 15192 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 22:35:49.139  INFO 15192 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-26 22:35:49.250  INFO 15192 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-26 22:35:49.482  INFO 15192 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-26 22:35:50.287  INFO 15192 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2019-12-26 22:35:50.377  INFO 15192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 22:35:50.387  INFO 15192 --- [main] c.e.ayoteralab.AyoteralabApplication     : Started AyoteralabApplication in 20.567 seconds (JVM running for 23.106)
+2019-12-26 22:36:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:36:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:36:15.479  INFO 15192 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:36:15.510  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:37:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:37:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:37:15.006  INFO 15192 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:37:15.064  INFO 15192 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:38:01.000  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:38:01.000  INFO 15192 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:38:18.965  INFO 15192 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:38:19.056  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:38:34.123  INFO 15192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 22:38:34.124  INFO 15192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 22:38:34.152  INFO 15192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2019-12-26 22:38:42.381  INFO 15192 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-26 22:38:43.251  INFO 15192 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-26 22:38:43.282 DEBUG 15192 --- [http-nio-8080-exec-5] c.e.a.m.m.U.getUserInfoById              : ==>  Preparing: SELECT * FROM user_info WHERE LOGIN_ID = ? 
+2019-12-26 22:38:43.470 DEBUG 15192 --- [http-nio-8080-exec-5] c.e.a.m.m.U.getUserInfoById              : ==> Parameters: test2(String)
+2019-12-26 22:38:43.591 DEBUG 15192 --- [http-nio-8080-exec-5] c.e.a.m.m.U.getUserInfoById              : <==      Total: 1
+2019-12-26 22:39:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:39:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:39:19.833  INFO 15192 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:39:19.903  INFO 15192 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:40:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:40:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:40:19.890  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:40:19.898  INFO 15192 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:41:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:41:01.003  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:41:17.619  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:41:17.637  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:42:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:42:01.003  INFO 15192 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:42:18.109  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:42:18.174  INFO 15192 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:43:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:43:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:43:19.488  INFO 15192 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:43:19.489  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:44:01.003  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:44:01.003  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:44:21.060  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:44:21.082  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:45:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:45:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:45:21.317  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:45:21.451  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:46:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:46:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:46:19.163  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:46:19.190  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:47:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:47:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:47:19.453  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:47:19.466  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:48:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:48:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:48:19.847  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:48:19.883  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:49:01.000  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:49:01.000  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:49:18.943  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:49:18.991  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:50:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:50:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:50:18.881  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:50:18.887  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:51:01.003  INFO 15192 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:51:01.003  INFO 15192 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:51:19.002  INFO 15192 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:51:19.006  INFO 15192 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:52:01.003  INFO 15192 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:52:01.003  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:52:19.479  INFO 15192 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:52:19.483  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:53:01.070  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:53:01.070  INFO 15192 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:53:22.434  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:53:22.549  INFO 15192 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:54:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:54:01.003  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:54:18.405  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:54:18.412  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:55:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:55:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:55:20.760  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:55:20.766  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:56:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:56:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:56:19.797  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:56:19.843  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:57:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:57:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:57:23.983  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:57:23.986  INFO 15192 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:58:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:58:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:58:19.255  INFO 15192 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 22:58:19.301  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:59:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 22:59:01.001  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 22:59:19.891  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 22:59:19.923  INFO 15192 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:00:01.000  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:00:01.002  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:00:19.291  INFO 15192 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:00:19.297  INFO 15192 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:04:28.354  INFO 9284 --- [main] c.e.ayoteralab.AyoteralabApplication     : Starting AyoteralabApplication on cysh-PC with PID 9284 (C:\git\ayotest\target\classes started by cysh in C:\git\ayotest)
+2019-12-26 23:04:28.377  INFO 9284 --- [main] c.e.ayoteralab.AyoteralabApplication     : No active profile set, falling back to default profiles: default
+2019-12-26 23:04:33.449  WARN 9284 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 23:04:33.451  WARN 9284 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+2019-12-26 23:04:34.485  INFO 9284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-26 23:04:38.816  INFO 9284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-26 23:04:38.849  INFO 9284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-26 23:04:38.850  INFO 9284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-26 23:04:39.332  INFO 9284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-26 23:04:39.333  INFO 9284 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10776 ms
+2019-12-26 23:04:43.895  INFO 9284 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/css/**, /static/js/**, *.ico'], []
+2019-12-26 23:04:44.101  INFO 9284 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f939a0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4da39ca9, org.springframework.security.web.header.HeaderWriterFilter@35c4e864, org.springframework.security.web.csrf.CsrfFilter@3b2553d9, org.springframework.security.web.authentication.logout.LogoutFilter@2c7db926, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@14c93774, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5584d9c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3252747e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45658133, org.springframework.security.web.session.SessionManagementFilter@682af059, org.springframework.security.web.access.ExceptionTranslationFilter@46039a21, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bf14704]
+2019-12-26 23:04:44.224  INFO 9284 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 23:04:44.846  INFO 9284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-26 23:04:46.361  INFO 9284 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-26 23:04:46.481  INFO 9284 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-26 23:04:46.696  INFO 9284 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-26 23:04:47.779  INFO 9284 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2019-12-26 23:04:47.899  INFO 9284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-26 23:04:47.911  INFO 9284 --- [main] c.e.ayoteralab.AyoteralabApplication     : Started AyoteralabApplication in 21.476 seconds (JVM running for 23.4)
+2019-12-26 23:05:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:05:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:05:16.625  INFO 9284 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:05:16.824  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:06:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:06:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:06:15.083  INFO 9284 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:06:15.091  INFO 9284 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:07:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:07:01.003  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:07:19.782  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:07:19.789  INFO 9284 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:07:26.332  INFO 9284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 23:07:26.334  INFO 9284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-26 23:07:26.361  INFO 9284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2019-12-26 23:07:43.463  INFO 9284 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-26 23:07:44.190  INFO 9284 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-26 23:07:44.223 DEBUG 9284 --- [http-nio-8080-exec-8] c.e.a.m.m.U.getUserInfoById              : ==>  Preparing: SELECT * FROM user_info WHERE LOGIN_ID = ? 
+2019-12-26 23:07:44.354 DEBUG 9284 --- [http-nio-8080-exec-8] c.e.a.m.m.U.getUserInfoById              : ==> Parameters: test2(String)
+2019-12-26 23:07:44.483 DEBUG 9284 --- [http-nio-8080-exec-8] c.e.a.m.m.U.getUserInfoById              : <==      Total: 1
+2019-12-26 23:07:44.883 DEBUG 9284 --- [http-nio-8080-exec-8] c.e.a.m.m.U.getUserRoleByUserId          : ==>  Preparing: SELECT B.ROLE_NAME FROM user_role A LEFT JOIN role_info B ON A.ROLE_ID = B.ROLE_ID where A.USER_ID = ? 
+2019-12-26 23:07:44.885 DEBUG 9284 --- [http-nio-8080-exec-8] c.e.a.m.m.U.getUserRoleByUserId          : ==> Parameters: 3(Integer)
+2019-12-26 23:07:44.893 DEBUG 9284 --- [http-nio-8080-exec-8] c.e.a.m.m.U.getUserRoleByUserId          : <==      Total: 1
+2019-12-26 23:08:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:08:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:08:20.517  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:08:20.589  INFO 9284 --- [Ayoteralab-schedule-pool-1] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:09:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:09:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:09:20.773  INFO 9284 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:09:20.803  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:10:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:10:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:10:19.478  INFO 9284 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:10:19.511  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:11:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:11:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:11:19.363  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:11:19.433  INFO 9284 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:12:01.000  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:12:01.000  INFO 9284 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:12:21.072  INFO 9284 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:12:21.124  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:13:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:13:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:13:21.970  INFO 9284 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:13:22.147  INFO 9284 --- [Ayoteralab-schedule-pool-10] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:14:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:14:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:14:18.630  INFO 9284 --- [Ayoteralab-schedule-pool-8] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:14:18.652  INFO 9284 --- [Ayoteralab-schedule-pool-4] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:15:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:15:01.001  INFO 9284 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:15:20.204  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:15:20.239  INFO 9284 --- [Ayoteralab-schedule-pool-3] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:16:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:16:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:16:22.005  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:16:22.043  INFO 9284 --- [Ayoteralab-schedule-pool-9] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:17:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:17:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:17:19.432  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:17:19.481  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:18:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:18:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:18:24.188  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:18:24.202  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:19:01.003  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:19:01.004  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:19:25.011  INFO 9284 --- [Ayoteralab-schedule-pool-5] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:19:25.164  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:20:01.004  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:20:01.004  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:20:21.511  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System
+2019-12-26 23:20:21.540  INFO 9284 --- [Ayoteralab-schedule-pool-2] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:21:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [START] testCron1 - System
+2019-12-26 23:21:01.002  INFO 9284 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [START] testCron2 - System
+2019-12-26 23:21:26.212  INFO 9284 --- [Ayoteralab-schedule-pool-7] c.e.a.main.Scheduler.TestScheduler       : [END] testCron2 - System
+2019-12-26 23:21:26.282  INFO 9284 --- [Ayoteralab-schedule-pool-6] c.e.a.main.Scheduler.TestScheduler       : [END] testCron1 - System

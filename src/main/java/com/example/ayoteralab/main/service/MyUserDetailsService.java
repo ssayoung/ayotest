@@ -1,9 +1,12 @@
 package com.example.ayoteralab.main.service;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.ayoteralab.main.dto.MyUserDetails;
@@ -23,7 +26,17 @@ public class MyUserDetailsService implements UserDetailsService {
 	}
 
 	public void signupUser(UserDTO user) {
+		//password encryption
+		BCryptPasswordEncoder passEncoder = new BCryptPasswordEncoder();
+		String encryptPass = passEncoder.encode(user.getLoginPass());
+		
+		user.setLoginPassEncrypt(encryptPass);
+		
 		userInfoMapper.signupUser(user);		
+	}
+	
+	public ArrayList<String> getUserRoleByUserId(Integer userId) {
+		return userInfoMapper.getUserRoleByUserId(userId);
 	}
 	
 }
