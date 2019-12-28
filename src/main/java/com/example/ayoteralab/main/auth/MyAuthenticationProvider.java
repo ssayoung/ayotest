@@ -33,7 +33,7 @@ public class MyAuthenticationProvider implements AuthenticationProvider {
 		
 		MyUserDetails mud = (MyUserDetails) myUserDetailsService.loadUserByUsername(loginId);
 		
-		BCryptPasswordEncoder passEncoder = new BCryptPasswordEncoder();
+		BCryptPasswordEncoder passEncoder = new BCryptPasswordEncoder();		
 		Boolean matchPass = passEncoder.matches(loginPass, mud.getPassword());
 		
 		if(mud == null || !matchPass) return null;
